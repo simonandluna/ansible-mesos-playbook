@@ -8,6 +8,7 @@ An ansible playbook for launching a mesos cluster with native docker and mesos e
 * Install [ansible](http://docs.ansible.com/intro_installation.html#installing-the-control-machine), version >= 1.7.
 * Install [librarian-ansible](https://github.com/bcoe/librarian-ansible) via ```gem install librarian-ansible```
 * Run ```librarian-ansible install```
+* Run ```cd librarian_roles/ansible-consul/ | ansible-galaxy install --role-file=requirements.yml --roles-path=roles --force```
 * Spin up a bunch of Ubuntu 14.04 servers, say 5, on your favorite cloud provider.
 * ```cp hosts.sample hosts``` and update the ```mesos_masters``` and ```mesos_slaves``` groups.
 * ```cp ansible.cfg.sample ansible.cfg``` to ensure librarian_roles is in the ansible path (```ansible.cfg``` is git-ignored).
