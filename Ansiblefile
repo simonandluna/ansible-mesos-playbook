@@ -14,4 +14,4 @@ role "ansible-marathon",
 role "ansible-mesos",
   github: "mhamrah/ansible-mesos"
 role "ansible-consul",
-  github: "mhamrah/ansible-consul"
+  github: "savagegus/ansible-consul"
